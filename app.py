@@ -18,7 +18,20 @@ import numpy as np
 import pickle
 import streamlit as st
 
+try:
+    nltk.data.find('corpora/stopwords')
+except LookupError:
+    nltk.download('stopwords')
 
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
+try:
+    nltk.data.find('corpora/wordnet')
+except LookupError:
+    nltk.download('wordnet')
 
 
 # Class PretraitementLyrics  pour charger et prétraiter les donnée
