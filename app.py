@@ -32,7 +32,16 @@ try:
     nltk.data.find('corpora/wordnet')
 except LookupError:
     nltk.download('wordnet')
-
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    st.info("Téléchargement des données 'punkt' de NLTK...")
+    nltk.download('punkt')
+try:
+    nltk.data.find('corpora/omw-1.4')
+except LookupError:
+    st.info("Téléchargement des données 'omw-1.4' de NLTK (pour WordNetLemmatizer)...")
+    nltk.download('omw-1.4')
 
 # Class PretraitementLyrics  pour charger et prétraiter les donnée
 class PretraitementLyrics:
