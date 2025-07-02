@@ -1,6 +1,6 @@
 # Application de Clustering de Paroles Musicales
 
-Ce projet présente une application interactive développée avec Streamlit pour charger, prétraiter  les donnée scrapper du site [https://kamer-lyrics.net](kamerlyrics) et analyser des paroles de chansons via diverses méthodes de clustering. L'objectif est de découvrir des groupes (clusters) naturels au sein d'un ensemble de paroles, basés sur leur contenu textuel.
+Ce projet présente une application interactive développée avec Streamlit pour charger, prétraiter  les donnée scrapper du site [kamerlyrics](https://kamer-lyrics.net) et analyser des paroles de chansons via diverses méthodes de clustering. L'objectif est de découvrir des groupes (clusters) naturels au sein d'un ensemble de paroles, basés sur leur contenu textuel.
 
 
 ## Fonctionnalités
@@ -40,7 +40,7 @@ cd clustering
 ```
 
 ### 2\. Créer l'environnement des données
-Récuperer le dossier zipper des lyrics scrapper  `lyrics.zip` disponible [](ici) 
+Récuperer le dossier zipper des lyrics scrapper  `lyrics.zip` disponible [ici]() 
 que vous devez en suite extraire dans le dossier `./clustering` ou .
 
 Créez un dossier nommé `lyrics` à la racine de votre projet, puis à l'intérieur de ce dossier `lyrics`, créez un sous-dossier nommé `lyrics_Artiste`.
@@ -87,7 +87,7 @@ Cette application est conçue pour être facilement déployable sur [Streamlit C
 2.  **Configuration des données NLTK** : Le script `app.py` contient des blocs de code pour télécharger automatiquement les ressources NLTK nécessaires (`stopwords`, `punkt`, `punkt_tab`, `wordnet`, `omw-1.4`) la première fois que l'application est lancée sur un nouvel environnement (y compris Streamlit Cloud). Cela évite d'avoir à les gérer manuellement.
 3.  **Structure du dossier des paroles** : Assurez-vous que le dossier `lyrics/lyrics_Artiste` contenant vos fichiers `.txt` est également commité et poussé vers votre dépôt GitHub. Streamlit Cloud clonera l'intégralité du dépôt.
 
-Voici le  lien de notre application déploier [https://dyleasydev-clustering-app-bmmiyz.streamlit.app/](kamerlyrics-cluster)
+Voici le  lien de notre application déploier [kamerlyrics-cluster](https://dyleasydev-clustering-app-bmmiyz.streamlit.app/)
 
 ## 🛠️ Technologies Utilisées
 
