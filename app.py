@@ -35,17 +35,14 @@ except LookupError:
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
-    st.info("Téléchargement des données 'punkt' de NLTK...")
     nltk.download('punkt')
 try:
     nltk.data.find('corpora/omw-1.4')
 except LookupError:
-    st.info("Téléchargement des données 'omw-1.4' de NLTK (pour WordNetLemmatizer)...")
     nltk.download('omw-1.4')
 try:
     nltk.data.find('tokenizers/punkt_tab')
 except LookupError:
-    st.info("Téléchargement des données 'punkt_tab' de NLTK...")
     nltk.download('punkt_tab')
 
 # Class PretraitementLyrics  pour charger et prétraiter les donnée
